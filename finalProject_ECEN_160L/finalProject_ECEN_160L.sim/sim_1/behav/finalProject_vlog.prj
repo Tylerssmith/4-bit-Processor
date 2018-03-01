@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../finalProject_ECEN_160L.srcs/sources_1/imports/Debouncer Files/meta_harden.v" --include "../../../finalProject_ECEN_160L.srcs/sources_1/imports/Debouncer Files"
+verilog xil_defaultlib  "../../../finalProject_ECEN_160L.srcs/sources_1/imports/Hawker_files/Program_ROM.v" --include "../../../finalProject_ECEN_160L.srcs/sources_1/imports/Debouncer Files"
+verilog xil_defaultlib  "../../../finalProject_ECEN_160L.srcs/sources_1/imports/Hawker_files/Instruction_Decoder.v" --include "../../../finalProject_ECEN_160L.srcs/sources_1/imports/Debouncer Files"
+verilog xil_defaultlib  "../../../finalProject_ECEN_160L.srcs/sources_1/imports/Debouncer Files/debouncer.v" --include "../../../finalProject_ECEN_160L.srcs/sources_1/imports/Debouncer Files"
+verilog xil_defaultlib  "../../../finalProject_ECEN_160L.srcs/sources_1/imports/finalProjectFiles/7segment.v" --include "../../../finalProject_ECEN_160L.srcs/sources_1/imports/Debouncer Files"
+verilog xil_defaultlib  "../../../finalProject_ECEN_160L.srcs/sources_1/new/finalProject.v" --include "../../../finalProject_ECEN_160L.srcs/sources_1/imports/Debouncer Files"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

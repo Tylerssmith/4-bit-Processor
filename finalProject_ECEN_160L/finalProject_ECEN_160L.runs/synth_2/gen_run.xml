@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_2" LaunchPart="xc7a35tcpg236-1" LaunchTime="1469041428">
+  <File Type="RDS-DCP" Name="finalProject.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_2/constrs_in.xml"/>
+  <File Type="RDS-UTIL-PB" Name="finalProject_utilization_synth.pb"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_2/sources.xml"/>
+  <File Type="RDS-PROPCONSTRS" Name="finalProject_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="finalProject.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_2/synth_2.psg"/>
+  <File Type="RDS-RDS" Name="finalProject.vds"/>
+  <File Type="RDS-UTIL" Name="finalProject_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="finalProject_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="finalProject_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Debouncer Files/meta_harden.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab07_Counter_Vivado_Basys3/Debouncer Files/meta_harden.v"/>
+        <Attr Name="ImportTime" Val="1447870029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Hawker_files/Program_ROM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Hawker_files/Program_ROM.v"/>
+        <Attr Name="ImportTime" Val="1458788067"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Hawker_files/Instruction_Decoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Hawker_files/Instruction_Decoder.v"/>
+        <Attr Name="ImportTime" Val="1458788067"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Debouncer Files/clogb2.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab07_Counter_Vivado_Basys3/Debouncer Files/clogb2.vh"/>
+        <Attr Name="ImportTime" Val="1447870013"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Debouncer Files/debouncer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab07_Counter_Vivado_Basys3/Debouncer Files/debouncer.v"/>
+        <Attr Name="ImportTime" Val="1447870022"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/finalProjectFiles/7segment.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../finalProject_ECEN_160L_to_package_W16/finalProject _ECEN_160L/finalProject.srcs/sources_1/imports/finalProjectFiles/7segment.v"/>
+        <Attr Name="ImportTime" Val="1458790882"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/finalProject.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../finalProject_ECEN_160L_to_package_W16/finalProject _ECEN_160L/finalProject.srcs/sources_1/new/finalProject.v"/>
+        <Attr Name="ImportTime" Val="1458837896"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="finalProject"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Labs/Basys3_XDC.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Basys3_XDC.xdc"/>
+        <Attr Name="ImportTime" Val="1439654378"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
